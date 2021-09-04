@@ -1026,7 +1026,7 @@ export class Terminal extends CoreTerminal implements ITerminal {
    *   - https://developer.mozilla.org/en-US/docs/DOM/KeyboardEvent
    * @param ev The keydown event to be handled.
    */
-  protected _keyDown(event: KeyboardEvent): boolean | undefined {
+  protected _keyDown(event: KeyboardEvent): boolean | undefined {////
     this._keyDownHandled = false;
 
     if (this._customKeyEventHandler && this._customKeyEventHandler(event) === false) {
